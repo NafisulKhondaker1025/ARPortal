@@ -75,5 +75,4 @@ const ensureMaterialArray = (material) => {
       window.XR8 ? startListen() : window.addEventListener('xrloaded', startListen)
     },
   })
-  export {cubeMapRealtimeComponent}
   

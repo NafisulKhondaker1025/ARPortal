@@ -132,5 +132,3 @@
       this.el.sceneEl.object3D.background = texture
     },
   })
-  
-  export {cubeEnvMapComponent}

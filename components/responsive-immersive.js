@@ -55,5 +55,3 @@ AFRAME.registerComponent('responsive-immersive', {
       window.XR8 ? onxrloaded() : window.addEventListener('xrloaded', onxrloaded)
     },
   })
-  
-  export {responsiveImmersiveComponent}
