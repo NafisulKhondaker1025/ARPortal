@@ -1,8 +1,8 @@
 
 import './index.css'
-import {cubeEnvMapComponent} from './components/cubemap-static'
-import {cubeMapRealtimeComponent} from './components/cubemap-realtime'
-import {responsiveImmersiveComponent} from './components/responsive-immersive'
+import {cubeEnvMapComponent} from './components/cubemap-static.js'
+import {cubeMapRealtimeComponent} from './components/cubemap-realtime.js'
+import {responsiveImmersiveComponent} from './components/responsive-immersive.js'
 import {
   portalCameraComponent, tapToPlacePortalComponent,
   promptFlowComponent, spinComponent,
