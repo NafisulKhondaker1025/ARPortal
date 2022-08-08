@@ -6,7 +6,7 @@ import {responsiveImmersiveComponent} from './components/responsive-immersive.js
 import {
   portalCameraComponent, tapToPlacePortalComponent,
   promptFlowComponent, spinComponent,
-} from './components/portal-components'
+} from './components/portal-components.js'
 
 AFRAME.registerComponent('portal-camera', portalCameraComponent)
 AFRAME.registerComponent('spin', spinComponent)
