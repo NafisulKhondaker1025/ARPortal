@@ -24,7 +24,7 @@ const ensureMaterialArray = (material) => {
       })
     })
   }
-  const cubeMapRealtimeComponent = {
+  AFRAME.registerComponent('cubemap-realtime', {
     schema: { },
     init() {
       const {data} = this
@@ -74,6 +74,6 @@ const ensureMaterialArray = (material) => {
       }
       window.XR8 ? startListen() : window.addEventListener('xrloaded', startListen)
     },
-  }
+  })
   export {cubeMapRealtimeComponent}
   

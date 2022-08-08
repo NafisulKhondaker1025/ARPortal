@@ -1,7 +1,7 @@
 // This component is an example of how to separate behavior by device category
 // using 8th Wall Engine sessionAttributes
 
-const responsiveImmersiveComponent = {
+AFRAME.registerComponent('responsive-immersive', {
     init() {
       const onAttach = ({sessionAttributes}) => {
         const hiderWalls = document.getElementById('hider-walls')
@@ -54,6 +54,6 @@ const responsiveImmersiveComponent = {
       }
       window.XR8 ? onxrloaded() : window.addEventListener('xrloaded', onxrloaded)
     },
-  }
+  })
   
   export {responsiveImmersiveComponent}

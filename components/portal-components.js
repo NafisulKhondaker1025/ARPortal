@@ -1,5 +1,5 @@
 // This component hides and shows certain elements as the camera moves
-const portalCameraComponent = {
+  AFRAME.registerComponent('portal-camera', {
     schema: {
       width: {default: 10},
       height: {default: 10},
@@ -28,9 +28,9 @@ const portalCameraComponent = {
       this.portalVideo.object3D.visible = isOutside
       this.wasOutside = isOutside
     },
-  }
+  })
   
-  const tapToPlacePortalComponent = {
+  AFRAME.registerComponent('tap-to-place-portal', {
     init() {
       const {sceneEl} = this.el
       const recenterBtn = document.getElementById('recenterButton')
@@ -98,9 +98,9 @@ const portalCameraComponent = {
   
       sceneEl.addEventListener('click', firstPlaceEvent)
     },
-  }
+  })
   
-  const promptFlowComponent = {
+  AFRAME.registerComponent('prompt-flow', {
     init() {
       this.prompt = document.getElementById('promptText')
       this.overlay = document.getElementById('overlay')
@@ -116,9 +116,9 @@ const portalCameraComponent = {
         this.prompt.classList.add('fly-out')
       })
     },
-  }
+  })
   
-  const spinComponent = {
+  AFRAME.registerComponent('spin', {
     schema: {
       speed: {default: 2000},
       direction: {default: 'normal'},
@@ -137,6 +137,4 @@ const portalCameraComponent = {
       })
     },
   
-  }
-  
-  export {portalCameraComponent, tapToPlacePortalComponent, promptFlowComponent, spinComponent}
+  })

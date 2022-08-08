@@ -51,7 +51,7 @@
     return img ? img.src : urlOrId
   }
   
-  const cubeEnvMapComponent = {
+  AFRAME.registerComponent('cubemap-static', {
     multiple: true,
     schema: {
       posx: {default: '#posx'},
@@ -131,6 +131,6 @@
     setBackground(texture) {
       this.el.sceneEl.object3D.background = texture
     },
-  }
+  })
   
   export {cubeEnvMapComponent}
